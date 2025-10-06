@@ -1,0 +1,21 @@
+{
+  "name": "Salva la Tua Casa",
+  "short_name": "SOS Casa",
+  "description": "Guida rapida per l'aiuto finanziario e pignoramento casa.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f4f4f9",
+  "theme_color": "#28a745",
+  "icons": [
+    {
+      "src": "icona-app.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icona-app-large.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

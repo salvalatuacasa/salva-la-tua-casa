@@ -1,0 +1,12 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salva la Tua Casa: SOS Debiti</title>
+    
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icona-app.png"> 
+    
+    <style>
+    /* ... il resto del tuo CSS qui ... */
+https://share.google/images/YjgQ8pQlavWrvLc5J
+

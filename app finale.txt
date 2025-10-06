@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salva la Tua Casa: SOS Debiti</title>
+    
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icona-app.png"> 
+    
+    <style>
+        /* NUOVI COLORI: Verde Speranza e Rosso Urgenza */
+        :root {
+            --color-primary: #28a745; /* Verde Speranza */
+            --color-primary-dark: #1e7e34; /* Verde più scuro per l'attivo */
+            --color-urgent: #dc3545; /* Rosso Urgenza */
+            --color-urgent-dark: #a71d2a;
+        }
+
+        /* CSS per un'interfaccia pulita e leggibile */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .header {
+            background-color: var(--color-primary); /* Verde Speranza */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .accordion-button {
+            background-color: #e9ecef;
+            color: #333;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: 0.4s;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .accordion-button:hover {
+            background-color: #d8dbe0;
+        }
+        
+        /* STILE AGGIUNTO PER EVIDENZIARE LA SEZIONE 6 */
+        .urgent-button {
+            background-color: var(--color-urgent); /* Rosso Urgenza */
+            color: white;
+            border: 2px solid var(--color-urgent-dark);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        }
+        .urgent-button:hover {
+            background-color: var(--color-urgent-dark);
+        }
+        
+        .accordion-content {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            margin-bottom: 10px;
+            border-left: 3px solid var(--color-primary); /* Verde Speranza sul bordo */
+        }
+        .active {
+            background-color: var(--color-primary-dark); /* Verde più scuro */
+            color: white;
+        }
+        /* Stili aggiuntivi per i contenuti interni */
+        .accordion-content h3 {
+            color: var(--color-primary); /* Verde Speranza sui titoli interni */
+            margin-top: 15px;
+        }
+        .accordion-content ol, .accordion-content ul {
+            padding-left: 20px;
+        }
+        /* Stile del pulsante di contatto */
+        .contact-button {
+            display: block; 
+            text-align: center; 
+            padding: 15px; 
+            margin-bottom: 15px; 
+            background-color: var(--color-primary); 
+            color: white; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 5px;
+            transition: 0.2s;
+        }
+        .contact-button:hover {
+            background-color: var(--color-primary-dark);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>SALVA LA TUA CASA</h1>
+        <p>SOS Debiti: Risorse legali e guide pratiche a costo zero.</p>
+    </div>
+
+    <div class="container">
+        <h2>Sezioni di Aiuto</h2>
+
+        <button class="accordion-button">1. COSA FARE IMMEDIATAMENTE? (I Documenti che Recevi)</button>
+        <div class="accordion-content">
+            <p><strong>Non ignorare le notifiche!</strong> L'unica arma che hai è conoscere i tuoi diritti e i tempi di reazione. I documenti arrivano in questa sequenza:</p>
+            
+            <h3>PASSO 1: Decreto Ingiuntivo (o Titolo Esecutivo)</h3>
+            <p>
+                È l'atto che ti ordina di pagare il debito. Non è un pignoramento, ma stabilisce che il debito è dovuto.
+                <strong>⏳ Tempo di reazione:</strong> Hai circa **40 giorni** per opporti legalmente (tramite avvocato) se ritieni che il debito non sia corretto.
+            </p>
+            
+            <h3>PASSO 2: Atto di Precetto</h3>
+            <p>
+                È l'avviso che il tuo creditore è pronto ad agire. Ti dà un'ultima opportunità di pagare prima che inizi il pignoramento.
+                <strong>⚠️ Attenzione:</strong> Hai solo **10 giorni** dalla ricezione per saldare o trovare un accordo. Se non agisci, si passa al passo successivo.
+            </p>
+
+            <h3>PASSO 3: Atto di Pignoramento</h3>
+            <p>
+                È l'atto con cui il creditore blocca formalmente la tua casa (o altri beni) e inizia la procedura forzata per venderla all'asta. A questo punto, la situazione è molto grave, ma ci sono ancora strade legali (come la Legge sul Sovraindebitamento).
+                <strong>🚨 Ultima Chance:</strong> Rivolgiti immediatamente a uno degli enti nella **Sezione 2** per valutare le vie d'uscita.
+            </p>
+        </div>
+
+        <button class="accordion-button">2. DOVE TROVARE AIUTO GRATUITO? (Contatti e Associazioni)</button>
+        <div class="accordion-content">
+            <a href="mailto:INSERISCI_TUA_EMAIL_QUI?subject=Richiesta%20di%20Aiuto%20SOS%20Casa" 
+               class="contact-button">
+                CONTATTACI PER AIUTO PERSONALIZZATO
+            </a>
+
+            <p>Se preferisci parlare con noi direttamente, invia una email al team. Altrimenti, qui sotto trovi i contatti gratuiti di associazioni e professionisti:</p>
+            <ul>
+                <li>
+                    <strong>Fondazione Anti-Usura ADVENTUM:</strong> 
+                    Offre un servizio gratuito di consulenza legale e supporto per problemi legati al rischio usura.
+                    <br>Help Line Usura: **800 810 123**
+                </li>
+                <li>
+                    <strong>Associazioni di Consumatori (es. Movimento Difesa del Cittadino):</strong> 
+                    Forniscono assistenza e supporto legale per la gestione dei debiti. Cerca la sede più vicina o i contatti online.
+                </li>
+                <li>
+                    <strong>Caritas Italiana:</strong> 
+                    Offre servizi di consulenza sui debiti in molte sedi diocesane. Cerca il "ServiceDebiti" della Caritas della tua zona.
+                </li>
+                <li>
+                    <strong>OCC (Organismi di Composizione della Crisi):</strong>
+                    Sono enti pubblici che gestiscono le procedure di sovraindebitamento previste dalla legge. Sono la via ufficiale.
+                </li>
+            </ul>
+        </div>
+
+        <button class="accordion-button">3. ORGANIZZARE I DOCUMENTI (Cosa Raccogliere Subito)</button>
+        <div class="accordion-content">
+            <p>Per qualsiasi consulenza legale o trattativa, devi avere questi documenti pronti. Cerca e digitalizza tutto:</p>
+            
+            <h3>I 3 Documenti Chiave</h3>
+            <ol>
+                <li>
+                    <strong>Tutti gli Atti Ricevuti:</strong> 
+                    Fai subito copia di qualsiasi **Decreto Ingiuntivo**, **Atto di Precetto** o **Atto di Pignoramento** che hai ricevuto. Senza questi, l'avvocato non può fare nulla.
+                </li>
+                <li>
+                    <strong>Contratti di Debito Originali:</strong> 
+                    Il contratto di **Mutuo**, il contratto di **Finanziamento** o la documentazione che ha generato il debito in origine. Serve per verificare eventuali irregolarità.
+                </li>
+                <li>
+                    <strong>Dichiarazione dei Redditi:</strong> 
+                    Gli ultimi CUD, 730 o dichiarazioni fiscali. Questi dimostrano la tua situazione economica attuale e sono cruciali per accedere alle procedure di Legge.
+                </li>
+            </ol>
+            <p><strong>Suggerimento:</strong> Tieni una copia fisica e una digitale (foto o scansione) in un luogo sicuro e separato.</p>
+        </div>
+        
+        <button class="accordion-button">4. LE VIE D'USCITA LEGALI (La Legge Salva-Debiti)</button>
+        <div class="accordion-content">
+            <p><strong>La Legge sul Sovraindebitamento</strong> (oggi Codice della Crisi) ti offre l'unica vera possibilità di salvare la casa o azzerare i debiti, a patto che tu non sia "fallibile". Le procedure più comuni per un consumatore sono:</p>
+            
+            <h3>OPZIONE A: Piano del Consumatore (Ristrutturazione)</h3>
+            <p>
+                <strong>Cos'è:</strong> È un piano per pagare i tuoi debiti in base alle tue attuali possibilità economiche. Ti permette di proporre un pagamento dilazionato e ridotto, e la parte di debito che non riesci a pagare viene cancellata (esdebitazione).
+                <br><strong>Vantaggio Chiave:</strong> Il Giudice può approvare il piano **anche se i creditori non sono d'accordo**, proteggendo i tuoi beni essenziali (come l'abitazione principale).
+            </p>
+            
+            <h3>OPZIONE B: Liquidazione Controllata del Sovraindebitato</h3>
+            <p>
+                <strong>Cos'è:</strong> Se non puoi presentare un piano (ad esempio perché non hai reddito o beni stabili), puoi mettere a disposizione tutti i tuoi beni non essenziali per tre anni.
+                <br><strong>Vantaggio Chiave:</strong> Dopo tre anni, tutti i debiti residui vengono **cancellati d'ufficio** dal Giudice (la cosiddetta "Esdebitazione del debitore incapiente"), permettendoti di ricominciare da zero.
+            </p>
+            
+            <p style="border-left: 4px solid #ffc107; padding-left: 10px; margin-top: 20px;">
+                <strong>AZIONE URGENTE:</strong> Per accedere a queste procedure, devi rivolgerti a un **OCC (Organismo di Composizione della Crisi)** o a un avvocato specializzato. Trovi i contatti nella Sezione 2.
+            </p>
+        </div>
+        
+        <button class="accordion-button">5. NON SEI SOLO: Supporto Emotivo</button>
+        <div class="accordion-content">
+            <p>La crisi finanziaria è spesso accompagnata da un forte stress e isolamento. È fondamentale chiedere aiuto per la salute mentale:</p>
+            
+            <h3>Risorse per il Benessere Psicologico</h3>
+            <ul>
+                <li>
+                    <strong>Medici di Base:</strong> 
+                    Il tuo medico di famiglia può essere il primo punto di riferimento per ricevere aiuto o essere indirizzato a servizi gratuiti di supporto psicologico nel tuo territorio.
+                </li>
+                <li>
+                    <strong>Centri di Salute Mentale Locali:</strong> 
+                    Ogni ASL (Azienda Sanitaria Locale) ha dei Centri di Salute Mentale (CSM) che offrono supporto, spesso a costo molto basso o nullo. Cerca il tuo CSM di riferimento.
+                </li>
+                <li>
+                    <strong>Gruppi di Auto-Aiuto:</strong> 
+                    Cerca associazioni o parrocchie che organizzano incontri di gruppo per persone in difficoltà economica. Parlare con chi ha vissuto la stessa situazione può essere cruciale.
+                </li>
+            </ul>
+        </div>
+
+        <button class="accordion-button urgent-button">6. SALVARE LA CASA ALL'ASTA (Tecnica del Saldo e Stralcio)</button>
+        <div class="accordion-content">
+            <p>Se la tua casa è già stata pignorata e va all'asta, hai ancora una possibilità per fermare la vendita e azzerare il debito:</p>
+            
+            <h3>La Soluzione "Saldo e Stralcio"</h3>
+            <p>
+                <strong>Cos'è:</strong> È una trattativa privata con il creditore (Banca o Finanziaria) per pagare il debito con una somma molto inferiore al totale dovuto, a patto che questo pagamento avvenga subito e in un'unica soluzione.
+            </p>
+            
+            <h4>Come Funziona per la Casa all'Asta:</h4>
+            <ol>
+                <li>
+                    <strong>Trovare un acquirente:</strong> Devi trovare un investitore o un privato interessato ad acquistare la tua casa a un prezzo stabilito.
+                </li>
+                <li>
+                    <strong>Trattare il Ribasso (Stralcio):</strong> L'acquirente o la società di consulenza tratta con la Banca per farsi pagare un importo ridotto. La Banca accetta perché preferisce incassare subito piuttosto che rischiare di perdere denaro con un'asta deserta o con prezzi troppo bassi.
+                </li>
+                <li>
+                    <strong>Cancellazione del Debito (Saldo):</strong> L'acquirente paga il prezzo concordato, il creditore firma l'accordo di **rinuncia agli atti** (ferma l'asta) e tu ottieni l'**esdebitazione** per la parte non pagata.
+                </li>
+            </ol>
+            
+            <p style="border-left: 4px solid var(--color-urgent); padding-left: 10px; margin-top: 20px;">
+                <strong>Importante:</strong> Questa procedura è complessa e deve essere gestita da società o avvocati specializzati in Saldo e Stralcio. **Non farla mai da solo.**
+            </p>
+        </div>
+        
+    </div> <script>
+        // JavaScript per far funzionare la lista espandibile (Accordion)
+        var acc = document.getElementsByClassName("accordion-button");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                // Rimuove la classe 'active' da tutti gli altri pulsanti
+                for (var j = 0; j < acc.length; j++) {
+                    // Controlla anche se il pulsante ha la classe urgent-button per mantenere il colore corretto se disattivato
+                    if (acc[j] !== this) {
+                        acc[j].classList.remove("active");
+                        acc[j].nextElementSibling.style.maxHeight = null;
+                    }
+                }
+                
+                // Toggle per il pulsante cliccato
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+        }
+    </script>
+
+</body>
+</html>
+https://share.google/images/YjgQ8pQlavWrvLc5J
