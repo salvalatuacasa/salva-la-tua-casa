@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Admin - Salva la Tua Casa</title>
+<style>
+body { font-family: Arial, sans-serif; background-color: #f4f4f9; margin:0; padding:0; }
+.container { max-width: 900px; margin: auto; padding: 20px; }
+h1 { color: #28a745; }
+table { width: 100%; border-collapse: collapse; margin-top:20px; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align:left; }
+th { background-color: #28a745; color: white; }
+tr:nth-child(even){background-color: #f2f2f2;}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Dashboard Admin</h1>
+<p>Qui puoi vedere tutte le richieste inviate dagli utenti.</p>
+<table id="requestsTable">
+<thead>
+<tr>
+<th>Nome</th>
+<th>Email</th>
+<th>Telefono</th>
+<th>Tipo di Problema</th>
+<th>Documento</th>
+</tr>
+</thead>
+<tbody>
+<!-- Le richieste saranno inserite qui automaticamente -->
+</tbody>
+</table>
+</div>
+
+<script>
+// Qui si integrerà Firebase per caricare le richieste
+console.log("Dashboard pronta, Firebase va configurato qui.");
+</script>
+</body>
+</html>
